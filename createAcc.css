@@ -1,0 +1,119 @@
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+/* Body Styling */
+body {
+    background-size: cover; /* or contain */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh; /* Full height */
+    margin: 0; /* Remove default margin */
+    font-family: 'Bubblegum Sans', sans-serif; /* Default font */
+}
+
+/* Header Styling */
+header {
+    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    z-index: 1000;
+}
+
+.logo img {
+    max-width: 80px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Inline navigation */
+    gap: 15px; /* Space between links */
+}
+
+nav a {
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #86b4c4;
+}
+
+/* Form Styling */
+form {
+    font-family: 'League Gothic', serif; /* Use 'League Gothic' for labels */
+}
+
+form label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+form input {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+}
+
+form button {
+    font-family: 'Cherry Bomb One', cursive;
+    font-size: 18px;
+    background-color: #2b485f;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+form button:hover {
+    background-color: #86b4c4;
+}
+
+/* Footer Styling */
+footer {
+    font-family: 'Bubblegum Sans', sans-serif;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    color: #2b485f;
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    form label {
+        font-size: 16px;
+    }
+
+    form button {
+        font-size: 16px;
+    }
+}

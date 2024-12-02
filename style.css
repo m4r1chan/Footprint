@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+
+body {
+    background-size: cover; /* or contain */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh; /* Full height */
+    margin: 0; /* Remove default margin */
+}
+
+/* Footer Section Styling */
+footer {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Ensures footer stays at the bottom */
+    color: #2b485f;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 20px; /* Padding around the navbar */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+#navbar {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between logo and nav */
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Center logo vertically */
+}
+
+nav {
+    flex-grow: 1; /* Allow nav to take up remaining space */
+    display: flex;
+    justify-content: center; /* Center nav items */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display items in a row */
+}
+
+
+nav li {
+    margin: 0 20px; /* Space between nav items */
+}
+
+nav a {
+    color: black;
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+nav a:hover {
+    color: #86b4c4;
+}
+
+
+.button {
+    background-color: #2b485f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: "Cherry Bomb One", system-ui;
+}
+
+.button1 {
+    background-color: #2b485f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: "Cherry Bomb One", system-ui;
+}
+
+.button:hover, 
+.button1:hover,
+button:hover {
+    background-color: #86b4c4;
+}
+
+
+
+button {
+    padding: 10px 20px;
+    background-color: #2b485f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: "Cherry Bomb One", system-ui;
+}
+
+
+a {
+    text-decoration: none;
+    color:#2b485f;
+}
+
+#about,
+#mission,
+#vision {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about h2,
+#mission h2,
+#vision h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: black;
+    font-family: "League Gothic", serif;
+}
+
+
+/* About Content */
+.about-content,
+.mission-content,
+.vision-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-content p,
+.mission-content p,
+.vision-content p {
+    Font-family: "Bubblegum Sans", sans-serif;
+    font-size: 20px;
+}
+
+/* About Text Box Styling */
+.about-text-box,
+.mission-text-box,
+.vision-text-box {
+    padding: 30px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    color: black;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: left;
+    background-color: #2b485f88;
+}
+
+/* Contact Page Styling */
+#contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2b485f88;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: black;
+    font-family: "League Gothic", serif;
+}
+
+.contact-container h4 {
+    Font-family: "Bubblegum Sans", sans-serif;
+    font-size: 15px;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+}
+
+#contact h4 {
+    margin-bottom: 20px;
+    color: black;
+    
+}
+#contact p {
+    font-size: 1.1rem;
+    color: black;
+    margin-bottom: 30px;
+    Font-family: "Bubblegum Sans", sans-serif;
+}
+
+/* Contact Details Section */
+.contact-details {
+    background-color: #acc6d49b;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+/* Contact Form Section */
+.contact-form h3 {
+    margin-bottom: 5px;
+    color: black;
+    font-family: "Cherry Bomb One", system-ui;
+}
+
+
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    color: black;
+    text-align: left;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 300px; /* Sets a fixed width */
+    box-sizing: border-box; /* Ensures padding and borders don't overflow the width */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #2b485f;
+    outline: none;
+}
+
+.contact-form button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #2b485f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #86b5c48a;
+}
+
+
+#products h2 {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;  /* Space below the title */
+    color: black;
+    font-family: "League Gothic", serif;
+}
+
+/* Product List */
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centers the product list */
+}
+
+/* Individual Product Item */
+.product-item {
+    background-color: #2b485f88;
+    padding: 20px;
+    margin: 10px;
+    width: 250px; /* Wider product box for better visibility */
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Product Title Styling */
+.product-item h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+    font-family: "Cherry Bomb One", system-ui;
+}
+
+/* Product Description Styling */
+.product-item p {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 15px;
+    Font-family: "Bubblegum Sans", sans-serif;
+}
+
+/* Product Image Styling */
+.product-image {
+    width: 100%;
+    height: auto;
+    max-height: 200px;  /* Adjust height as needed */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;  /* Space between image and text */
+}
+
+/* Buttons - Add to Cart & Buy Now */
+.product-box button {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    font-family: "League Gothic", serif;
+}
+
+.product-box button:hover {
+    background-color: #555;
+}
+
+/* Button - Add to Cart */
+.add-to-cart {
+    background-color: #2b485f;
+}
+
+.add-to-cart:hover {
+    background-color: #523bd3;
+}
+
+/* Button - Buy Now */
+.buy-now {
+    background-color: #af120cab;
+}
+
+.buy-now:hover {
+    background-color: #df3832;
+}
+
+
+.profile-icon {
+    position: relative; /* Position relative for dropdown */
+    margin-left: 20px; /* Space between nav items */
+}
+
+.profile-img {
+    width: 80px; /* Size of the profile icon */
+    height: 80px; /* Size of the profile icon */
+    border-radius: 50%; /* Make it circular */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.dropdown {
+    display: none; /* Hide dropdown by default */
+    position: absolute; /* Position it relative to the profile icon */
+    top: 90px; /* Position below the icon */
+    right: 0; /* Align to the right */
+    background-color: white; /* Background color of dropdown */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for dropdown */
+    border-radius: 5px; /* Rounded corners */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.profile-icon:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown a {
+    display: block; /* Make links block elements */
+    padding: 10px 25px; /* Padding for links */
+    color: #333; /* Text color */
+    text-decoration: none; /* Remove underline */
+}
+
+.dropdown a:hover {
+    background-color: #f0f0f0; /* Background color on hover */
+}
+
+
+
+
+
+
+

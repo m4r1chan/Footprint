@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+/* Background Image */
+body {
+    background-image: url('../assets/download2.jfif');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 14px;
+    background-color: #2b485f;
+    color: white;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 20px; /* Padding around the navbar */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+#navbar {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between logo and nav */
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Center logo vertically */
+}
+
+nav {
+    flex-grow: 1; /* Allow nav to take up remaining space */
+    display: flex;
+    justify-content: center; /* Center nav items */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display items in a row */
+}
+
+
+
+nav li {
+    margin: 0 20px; /* Space between nav items */
+}
+
+nav a {
+    color: black;
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+nav a:hover {
+    color: #86b4c4;
+}
+
+/* Profile style */
+.profile-icon {
+    position: relative; /* Position relative for dropdown */
+    margin-left: 20px; /* Space between nav items */
+}
+
+.profile-img {
+    width: 80px; /* Size of the profile icon */
+    height: 80px; /* Size of the profile icon */
+    border-radius: 50%; /* Make it circular */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.dropdown {
+    display: none; /* Hide dropdown by default */
+    position: absolute; /* Position it relative to the profile icon */
+    top: 90px; /* Position below the icon */
+    right: 0; /* Align to the right */
+    background-color: white; /* Background color of dropdown */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for dropdown */
+    border-radius: 5px; /* Rounded corners */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.profile-icon:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown a {
+    display: block; /* Make links block elements */
+    padding: 10px 25px; /* Padding for links */
+    color: #333; /* Text color */
+    text-decoration: none; /* Remove underline */
+}
+
+.dropdown a:hover {
+    background-color: #f0f0f0; /* Background color on hover */
+}
+
+/* Add styles for the checkout page */
+.checkout-container {
+    background-color: rgba(108, 121, 158, 0.329);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-container h4 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.checkout-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.checkout-container th, .checkout-container td {
+    padding: 12px;
+    text-align: left;
+}
+
+.checkout-container th {
+    background-color: #2b485f;
+    color: rgb(255, 255, 255);
+}
+
+.checkout-container td {
+    background-color: #f9f9f9;
+}
+
+.cart-summary {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cart-summary h4 {
+    margin: 10px 0;
+}
+
+
+/* Billing Information Box */
+.billing-box {
+    background-color: #47586ea1;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.billing-box label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.billing-box input, .billing-box textarea, .billing-box select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.billing-box button {
+    background-color: #2b485f;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.billing-box button:hover {
+    background-color: #86b4c48a;
+}

@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+/* Background Image */
+body {
+    background-image: url('../assets/download2.jfif');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 14px;
+    background-color: #2b485f;
+    color: white;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 20px; /* Padding around the navbar */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+#navbar {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between logo and nav */
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Center logo vertically */
+}
+
+nav {
+    flex-grow: 1; /* Allow nav to take up remaining space */
+    display: flex;
+    justify-content: center; /* Center nav items */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display items in a row */
+}
+
+
+
+nav li {
+    margin: 0 20px; /* Space between nav items */
+}
+
+nav a {
+    color: black;
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+nav a:hover {
+    color: #86b4c4;
+}
+
+/* Profile style */
+.profile-icon {
+    position: relative; /* Position relative for dropdown */
+    margin-left: 20px; /* Space between nav items */
+}
+
+.profile-img {
+    width: 80px; /* Size of the profile icon */
+    height: 80px; /* Size of the profile icon */
+    border-radius: 50%; /* Make it circular */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.dropdown {
+    display: none; /* Hide dropdown by default */
+    position: absolute; /* Position it relative to the profile icon */
+    top: 90px; /* Position below the icon */
+    right: 0; /* Align to the right */
+    background-color: white; /* Background color of dropdown */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for dropdown */
+    border-radius: 5px; /* Rounded corners */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.profile-icon:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown a {
+    display: block; /* Make links block elements */
+    padding: 10px 25px; /* Padding for links */
+    color: #333; /* Text color */
+    text-decoration: none; /* Remove underline */
+}
+
+.dropdown a:hover {
+    background-color: #f0f0f0; /* Background color on hover */
+}
+
+/* Cart Page Styles */
+.cart-page {
+    padding: 20px 20px;
+    background-color: #f5f5f5; /* Light background for the cart */
+    font-family: "Bubblegum Sans", sans-serif;
+}
+
+.cart-container {
+    max-width: 530px;
+    margin: 0 auto;
+    background-color: #a7c5df96; /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#cart h3 {
+    font-family: "Bubblegum Sans", sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+
+.cart-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cart-header h1 {
+    font-family: 'Fascinate', sans-serif;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.cart-header p {
+    font-size: 25px;
+    font-family: "League Gothic", serif;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: initial;
+    border-radius: 10px;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+    margin-left: 15px;
+}
+
+.cart-item-details h3 {
+    font-family: "Cherry Bomb One", sans-serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.cart-item-details p {
+    font-family: "Bubblegum Sans", sans-serif;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.cart-item-details span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2b485f;
+}
+
+.cart-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cart-actions .total-price {
+    font-size: 24px;
+    font-family: "Bebas Neue", sans-serif;
+    color: #2b485f;
+}
+
+.cart-actions .checkout-button {
+    background-color: #2b485f;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    font-size: 20px;
+    font-family: "Cherry Bomb One", sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cart-actions .checkout-button:hover {
+    background-color: #86b4c4;
+}
+
+/* Style for the cart summary container */
+.cart-summary-container {
+    margin-top: 20px; /* Add spacing from other elements */
+    width: 50%; /* Set a width for the summary table container */
+    margin-left: auto;
+    margin-right: auto; /* Center the table */
+    text-align: left; /* Align text in table cells */
+}
+
+/* Style for the summary table */
+.cart-summary-table {
+    width: 100%; /* Use the full width of the container */
+    border-collapse: collapse; /* Merge cell borders */
+    font-family: Arial, sans-serif; /* Set font style */
+    font-size: 16px; /* Adjust font size */
+    color: #333; /* Font color */
+}
+
+/* Add padding and border for table cells */
+.cart-summary-table td {
+    padding: 10px; /* Add padding inside cells */
+    border: 1px solid #ddd; /* Add border for cell separation */
+    text-align: left; /* Align text to the left */
+}
+
+/* Highlight the labels */
+.cart-summary-table td:first-child {
+    font-weight: bold; /* Bold the first column (labels) */
+    background-color: #f4f4f4; /* Light gray background for labels */
+}
+
+/* Total value cells */
+.cart-summary-table td:last-child {
+    text-align: right; /* Align numeric values to the right */
+}
+
+/* Style for the checkout container */
+.checkout-container {
+    text-align: center; /* Center align the button within the container */
+    margin-top: 20px; /* Add space above the container */
+}
+
+/* Style for the Proceed to Checkout button */
+.procheckout-btn {
+    background-color: #121d4e9f; /* Green background */
+    color: #fff; /* White text */
+    font-size: 18px; /* Larger font size for prominence */
+    font-family: Arial, sans-serif; /* Consistent font */
+    padding: 12px 24px; /* Add padding for a larger button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+/* Hover effect for the button */
+.procheckout-btn:hover {
+    background-color: #080677; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight upward movement */
+}
+
+/* Focus effect for accessibility */
+.procheckout-btn:focus {
+    outline: 2px solid #0062cc; /* Blue outline for focus */
+    outline-offset: 4px; /* Space between button and outline */
+}
+
+/* Container for the cart summary table */
+.cart-summary-table {
+    margin: 20px auto; /* Center the table horizontally with spacing above/below */
+    width: 60%; /* Adjust the width of the table */
+    text-align: center; /* Center-align text inside */
+    border-collapse: collapse; /* Remove spacing between table cells */
+    font-family: Arial, sans-serif; /* Set font for consistency */
+}
+
+/* Table styling */
+.cart-summary-table table {
+    width: 100%; /* Make table take the full width of its container */
+    border: 1px solid #ccc; /* Add a light border to the table */
+}
+
+/* Header row styling */
+.cart-summary-table th {
+    background-color: #f4f4f4; /* Light gray background for the header */
+    padding: 10px; /* Padding for the header cells */
+    border: 1px solid #ccc; /* Border for the header cells */
+    text-transform: uppercase; /* Uppercase text for headers */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Body row styling */
+.cart-summary-table td {
+    padding: 10px; /* Padding for body cells */
+    border: 1px solid #ccc; /* Border for body cells */
+    font-size: 16px; /* Slightly larger text */
+}
+
+/* General styles for the delete button */
+button.delete {
+    background-color: #912c2c9d; /* Red background to indicate deletion */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    padding: 8px 15px; /* Add padding for a clickable area */
+    font-size: 14px; /* Adjust font size for readability */
+    border-radius: 6px; /* Rounded corners for a modern look */
+    cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+
+}
+
+/* Hover effect for the delete button */
+button.delete:hover {
+    background-color: #d93636; /* Slightly darker red on hover */
+}
+
+/* Active effect for the delete button */
+button.delete:active {
+    background-color: #8d5a5a; /* Even darker red for active state */
+    transform: scale(0.98); /* Slightly shrink the button when clicked */
+}
+
+.button:hover {
+    background-color: #a8cbd6;
+}
+
+
+/* Add styles for the checkout page */
+.checkout-container {
+    background-color: rgba(108, 121, 158, 0.329);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-container h4 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.checkout-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.checkout-container th, .checkout-container td {
+    padding: 12px;
+    text-align: left;
+}
+
+.checkout-container th {
+    background-color: #2b485f;
+    color: rgb(255, 255, 255);
+}
+
+.checkout-container td {
+    background-color: #f9f9f9;
+}
+
+.cart-summary {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cart-summary h4 {
+    margin: 10px 0;
+}
